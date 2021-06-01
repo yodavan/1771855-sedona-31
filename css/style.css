@@ -71,17 +71,21 @@
 /* ------------- main ------------*/
 /*back-photo*/
 .back-photo {
+  position: relative;
   max-width: 100%;
   min-height: 509px;
-  background: var(--basic-lite_blue) url(../img/image_index/background_photo.jpg) no-repeat;
+  background: var(--basic-lite_blue) url(../img/image_index/background_photo.jpg) no-repeat 0 0;
 }
 .back-photo__mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   height: 57px;
-  max-width: 1200px;
-  background: url(../img/icons/shape-5.svg) no-repeat;
+  min-width: 1200px;
+  background: url(../img/icons/mask.svg) no-repeat;
 }
 .back_photo__text {
-  list-style: none;
+  padding-top: 77px;
   text-align: center;
 }
 
