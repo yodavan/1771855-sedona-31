@@ -16,6 +16,7 @@
   --basic-white:  #ffffff;
   --basic-white_opacity: rgba(255, 255, 255, 0.3);
   --basic-gray: #EEEEEE;
+  --basic-gray_gray: #EBEBEB;
   --basic-new_gray: #F2F2F2;
   --basic-blond_gray: #CACACA;
   --basic-black: #000000;
@@ -109,6 +110,11 @@
 .nav__list a:hover {
   color: var(--basic-blue);
 }
+.nav__list a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 
 /*-------------------------- main --------------------*/
 /* ------------- main index ------------*/
@@ -398,10 +404,11 @@
   margin: 0;
 }
 .search__button:hover {
-  background: var(--basic-white);
-  color: var(--basic-brown);
-  border: 1px solid var(--basic-brown);
-  box-shadow: 0px 5px 15px var(--basic-lite_gray);
+  background: var(--basic-brown_brown);
+}
+.search__button:active {
+  background: var(--basic-darkbrown);
+  color: var(--basic-white_opacity);
 }
 /*form*/
 .search__form {
@@ -510,20 +517,28 @@
   grid-row: -2 / -1;
   align-self: end;
 }
-.search-form__item .search-form__calendar:hover,
-.search-form__item .search-form__calendar:focus {
-  background: url(../img/icons/calendar.svg) no-repeat 316px center;
+.search-form__item .search-form__calendar:hover {
+  background: var(--basic-gray_gray) url(../img/icons/calendar.svg) no-repeat 316px center;
 }
-.search-form__item input:hover,
+.search-form__item .search-form__calendar:focus  {
+  outline: none;
+  background: var(--basic-white) url(../img/icons/calendar.svg) no-repeat 316px center;
+  border: 2px solid var(--basic-gray_gray);
+}
+.search-form__item input:hover {
+  background: var(--basic-gray_gray);
+}
 .search-form__item input:focus {
+  outline: none;
   background: var(--basic-white);
-  box-shadow: 0px 5px 15px var(--basic-lite_gray);
+  border: 2px solid var(--basic-gray_gray);
 }
 .form__button:hover {
-  background: var(--basic-white);
-  color: var(--basic-blue);
-  border: 1px solid var(--basic-blue);
-  box-shadow: 0px 5px 15px var(--basic-lite_gray);
+  background: var(--basic-darkblue);
+}
+.form__button:active {
+  background: var(--basic-blue_blue);
+  color: var(--basic-white_opacity);
 }
 
 /*--------- map --------*/
