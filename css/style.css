@@ -41,6 +41,18 @@
 .page {
   height: 100%;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
 /* ----BODY---- */
 .page-body {
   font-family: "PTSans", "Arial", sans-serif;
@@ -426,10 +438,12 @@
 .search-form__item:nth-child(1) {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+  position: relative;
 }
 .search-form__item:nth-child(2) {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  position: relative;
 }
 .search-form__item:nth-child(3) {
   grid-column: 1 / 2;
@@ -468,11 +482,14 @@
   border: none;
   height: 38px;
   padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
   margin: 0;
 }
-.search-form__item:nth-child(3) input,
-.search-form__item:nth-child(4) input {
-  width: 114px;
+.search-form__item .search-form__people {
+  width: 42px;
+  padding-left: 52px;
+  padding-right: 20px;
 }
 .search-form__item:nth-child(4) input {
   justify-self: end;
@@ -482,7 +499,6 @@
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
-  padding-left: 12px;
   line-height: 26px;
   text-transform: uppercase;
 }
@@ -491,14 +507,36 @@
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
-  padding-left: 52px;
   line-height: 26px;
 }
 .search-form__item .search-form__calendar {
-  width: 346px;
-  background: var(--basic-new_gray) url(../img/icons/calendar.svg) no-repeat 316px center;
+  width: 334px;
+  background: var(--basic-new_gray);
   grid-column: 2 / -1;
   justify-self: end;
+  padding-left: 12px;
+}
+.search-form__item:nth-child(1)::before,
+.search-form__item:nth-child(2)::before {
+  content: "";
+  width: 21px;
+  height: 23px;
+  right: 10px;
+  top: 8px;
+  position: absolute;
+  background: url(../img/icons/calendar.svg);
+}
+.search-form__item:nth-child(2):hover::before,
+.search-form__item:nth-child(1):hover::before {
+  width: 21px;
+  height: 23px;
+  background: url(../img/icons/calendarblack.svg);
+}
+.search-form__item:nth-child(2):active::before,
+.search-form__item:nth-child(1):active::before {
+  width: 21px;
+  height: 23px;
+  background: url(../img/icons/calendarblue.svg);
 }
 .form__button {
   text-transform: uppercase;
@@ -518,11 +556,11 @@
   align-self: end;
 }
 .search-form__item .search-form__calendar:hover {
-  background: var(--basic-gray_gray) url(../img/icons/calendar.svg) no-repeat 316px center;
+  background: var(--basic-gray_gray);
 }
 .search-form__item .search-form__calendar:focus  {
   outline: none;
-  background: var(--basic-white) url(../img/icons/calendar.svg) no-repeat 316px center;
+  background: var(--basic-white);
   border: 2px solid var(--basic-gray_gray);
 }
 .search-form__item input:hover {
