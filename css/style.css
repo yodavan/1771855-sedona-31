@@ -643,6 +643,11 @@ input[type=number] {
   width: 317px;
   margin-top: 11px;
 }
+.main-filter__input:nth-child(1) {
+  display: flex;
+
+  position: relative;
+}
 .main-filter__input input[type="range"] {
   width: 317px;
   margin-top: 15px;
@@ -662,11 +667,30 @@ input[type=number] {
 .main-filter__input input[type="number"] {
   font: inherit;
   background: url(../img/image_catalog/background.jpg) no-repeat center center;
-  border: 2px solid var(--basic-white);
+  border: 1px solid var(--basic-white);
   color: var(--basic-white);
   height: 34px;
   padding: 0;
+  flex-grow: 1;
+  outline: none;
 }
+.main-filter__input input:nth-child(1) {
+  border-right: none;
+}
+.main-filter__input input:nth-child(2) {
+  border-left: none;
+}
+.main-filter__input:nth-child(1)::before {
+  content: "";
+  width: 2px;
+  height: 22px;
+  position: absolute;
+  background: var(--basic-white);
+  top: 7px;
+  left: 50%;
+  margin-left: -1px;
+}
+
 .main-filter__form button {
   justify-self: center;
   grid-column: 4 / -1;
