@@ -31,7 +31,7 @@
 
       <main>
 
-       <!--<h1>Поиск Гостиницы в городке Седона</h1>-->
+        <h1 class="visually-hidden">Поиск Гостиницы в городке Седона</h1>
 
         <section class="main-filter">
           <form class="main-filter__form" action="https://echo.htmlacademy.ru" method="POST">
@@ -40,15 +40,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="main-filter__list">
                 <li class="main-filter__item">
-                  <input type="checkbox" name="swimming_pool" id="filter_swimming_pool" checked>
+                  <input class="visually-hidden item__input" type="checkbox" name="swimming_pool" id="filter_swimming_pool" checked>
                   <label for="filter_swimming_pool">Бассейн</label>
                 </li>
                 <li class="main-filter__item">
-                  <input type="checkbox" name="parking" id="filter_parking">
+                  <input class="visually-hidden item__input" type="checkbox" name="parking" id="filter_parking">
                   <label for="filter_parking">Парковка</label>
                 </li>
                 <li class="main-filter__item">
-                  <input type="checkbox" name="Wi_Fi" id="filter_Wi_Fi">
+                  <input class="visually-hidden item__input" type="checkbox" name="Wi_Fi" id="filter_Wi_Fi">
                   <label for="filter_Wi_Fi">Wi-Fi</label>
                 </li>
               </ul>
@@ -58,15 +58,15 @@
               <legend>Тип жилья:</legend>
               <ul class="main-filter__list">
                 <li class="main-filter__item">
-                  <input type="checkbox" name="hotel" id="filter_hotel" checked>
+                  <input class="visually-hidden item__input" type="checkbox" name="hotel" id="filter_hotel" checked>
                   <label for="filter_hotel">Гостиница</label>
                 </li>
                 <li class="main-filter__item">
-                  <input type="checkbox" name="motel" id="filter_motel" checked>
+                  <input class="visually-hidden item__input" type="checkbox" name="motel" id="filter_motel" checked>
                   <label for="filter_motel">Мотель</label>
                 </li>
                 <li class="main-filter__item">
-                  <input type="checkbox" name="apartment" id="filter_apartment" checked>
+                  <input class="visually-hidden item__input" type="checkbox" name="apartment" id="filter_apartment" checked>
                   <label for="filter_apartment">Апартаменты</label>
                 </li>
               </ul>
@@ -79,8 +79,12 @@
                   <input type="number" placeholder="ОТ 0">
                   <input type="number" placeholder="ДО 3000">
                 </li>
-                <li class="main-filter__input">
-                  <input type="range" min="0" max="4000" value="3000">
+                <li class="main-filter__range-controls">
+                  <div class="range-controls__scale">
+                    <div class="range-controls__bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </li>
               </ul>
             </fieldset>
@@ -98,8 +102,20 @@
               <li class="filter__item"><button type="submit" autofocus>По цене</button></li>
               <li class="filter__item"><button type="submit">По типу</button></li>
               <li class="filter__item"><button type="submit">По рейтингу</button></li>
-              <li class="filter__item"><button type="submit"><image src="img/icons/cursorup.svg" alt="up"></button></li>
-              <li class="filter__item"><button type="submit"><image src="img/icons/cursordown.svg" alt="down"></button></li>
+              <li class="filter__item">
+                <button class="button-up" type="button">
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="button-down" type="button" autofocus>
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+                  </svg>
+                </button>
+              </li>
             </ul>
           </div>
         </section>
