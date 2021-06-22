@@ -683,7 +683,7 @@ input[type=number] {
   width: 1055px;
 
   display: grid;
-  grid-template-columns: 255px 255px 1fr 318px;
+  grid-template-columns: 255px 255px 1fr 319px;
 }
 .main-filter__search {
   border: none;
@@ -695,6 +695,9 @@ input[type=number] {
   font-size: 16px;
   line-height: 21px;
   margin-left: -3px;
+}
+.main-filter__search:nth-child(3) legend {
+  margin-left: -1px;
 }
 .main-filter__list {
   list-style: none;
@@ -711,7 +714,7 @@ input[type=number] {
   margin: 0;
 }
 .main-filter__search:nth-child(3) .main-filter__list {
-  width: 317px;
+  width: 319px;
   margin-top: 11px;
 }
 .main-filter__item label {
@@ -780,9 +783,9 @@ input[type=number] {
 .main-filter__input input[type="number"] {
   font: inherit;
   background: url(../img/image_catalog/background.jpg) no-repeat top right;
-  border: 1px solid var(--basic-white);
+  border: 2px solid var(--basic-white);
   color: var(--basic-white);
-  height: 34px;
+  height: 32px;
   padding: 0;
   outline: none;
 }
@@ -791,12 +794,14 @@ input[type=number] {
 }
 .main-filter__input input:nth-child(1) {
   border-right: none;
+  border-radius: 2px 0 0 2px;
   width: 80px;
   padding-left: 65px;
   padding-right: 13px;
 }
 .main-filter__input input:nth-child(2) {
   border-left: none;
+  border-radius:0 2px 2px 0;
   width: 72px;
   padding-left: 52px;
   padding-right: 30px;
@@ -841,7 +846,7 @@ input[type=number] {
   left: 0%;
 }
 .toggle-max {
-  left: 79%;
+  left: 80%;
 }
 .toggle:hover {
   top: 9px;
@@ -850,13 +855,13 @@ input[type=number] {
 }
 
 .main-filter__form button {
-  justify-self: center;
   grid-column: 4 / -1;
   grid-row: 2 / 3;
   width: 137px;
   height: 36px;
   padding: 0;
-  margin: 15px 12px 0 0;
+  margin-top: 15px;
+  margin-left: 86px;
   font: inherit;
   line-height: 21px;
   font-size: 14px;
@@ -865,6 +870,7 @@ input[type=number] {
   text-transform: uppercase;
   background: url(../img/image_catalog/background.jpg) no-repeat center right;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   cursor: pointer;
 }
 .main-filter__form button:hover {
