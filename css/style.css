@@ -523,6 +523,7 @@ input[type=number] {
 }
 .search-form__calendar::placeholder {
   color: var(--basic-black);
+  opacity: 1;
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
@@ -530,6 +531,7 @@ input[type=number] {
 }
 .search-form__people::placeholder {
   color: var(--basic-black);
+  opacity: 1;
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
