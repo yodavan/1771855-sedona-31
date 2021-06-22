@@ -823,7 +823,7 @@ input[type=number] {
   padding-top: 20px;
 }
 .range-controls__scale {
-  width: 314px;
+  width: 316px;
   height: 2px;
   background: var(--basic-white_opacity);
 }
@@ -1036,10 +1036,10 @@ input[type=number] {
   color: var(--basic-white);
   text-align: center;
   margin-top: 15px;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 .product__link:nth-of-type(1) {
-  height: 22px;
+  height: 24px;
   width: 110px;
   background: var(--basic-blue);
 }
@@ -1052,7 +1052,7 @@ input[type=number] {
 }
 .product__link:nth-of-type(2) {
   width: 142px;
-  height: 22px;
+  height: 24px;
   background: var(--basic-brown);
 }
 .product__link:nth-of-type(2):hover {
