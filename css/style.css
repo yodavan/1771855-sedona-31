@@ -32,6 +32,7 @@
   --basic-darkgray: #666666;
   --basic-gray_toggle: #ABABAB;
   --basic-gray_button: #A9A9A9;
+  --basic-dark_darkgray: #6A6A6A;
   --basic-lite_white: rgba(255, 255, 255, 0.9);
   --basic-lite_gray: rgba(0, 1, 1, 0.2);
   --basic-lite_blue: rgb(218, 238, 250);
@@ -453,7 +454,7 @@ input[type=number] {
 .search-form__item:nth-child(1) {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   position: relative;
 }
 .search-form__item:nth-child(2) {
@@ -504,8 +505,8 @@ input[type=number] {
   font: inherit;
   background: var(--basic-new_gray);
   line-height: 26px;
-  border: none;
   height: 34px;
+  border: none;
   border: 2px solid var(--basic-new_gray);
   padding: 0;
   text-transform: uppercase;
@@ -513,8 +514,8 @@ input[type=number] {
   margin: 0;
 }
 .search-form__item .search-form__people {
-  width: 28px;
-  padding-left: 52px;
+  width: 29px;
+  padding-left: 51px;
   padding-right: 30px;
 }
 .search-form__item:nth-child(4) input {
@@ -525,7 +526,6 @@ input[type=number] {
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
-  line-height: 26px;
   text-transform: uppercase;
 }
 .search-form__people::placeholder {
@@ -533,14 +533,13 @@ input[type=number] {
   font-size: 14px;
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
-  line-height: 26px;
 }
 .search-form__item .search-form__calendar {
-  width: 280px;
+  width: 282px;
   background: var(--basic-new_gray);
   grid-column: 2 / -1;
   justify-self: end;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-right: 50px;
   position: relative;
 }
@@ -682,7 +681,7 @@ input[type=number] {
   width: 1055px;
 
   display: grid;
-  grid-template-columns: 255px 255px 1fr 317px;
+  grid-template-columns: 255px 255px 1fr 318px;
 }
 .main-filter__search {
   border: none;
@@ -739,6 +738,27 @@ input[type=number] {
   border: none;
   background: url(../img/icons/checkbox-on.svg) no-repeat left 5px;
 }
+.item__input:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-dark_darkgray);
+  left: -40px;
+  top: 0;
+  border-radius: 3px;
+}
+.item__input:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -40px;
+  top: -5px;
+  border: none;
+  background: url(../img/icons/checkbox-off.svg) no-repeat left 5px;
+}
+
 .main-filter__input:nth-child(1) {
   display: flex;
   position: relative;
@@ -757,12 +777,11 @@ input[type=number] {
 
 .main-filter__input input[type="number"] {
   font: inherit;
-  background: url(../img/image_catalog/background.jpg) no-repeat center center;
+  background: url(../img/image_catalog/background.jpg) no-repeat top right;
   border: 1px solid var(--basic-white);
   color: var(--basic-white);
   height: 34px;
   padding: 0;
-  flex-grow: 1;
   outline: none;
 }
 .main-filter__input input::placeholder {
@@ -770,15 +789,15 @@ input[type=number] {
 }
 .main-filter__input input:nth-child(1) {
   border-right: none;
-  width: 76px;
+  width: 80px;
   padding-left: 65px;
-  padding-right: 15px;
+  padding-right: 13px;
 }
 .main-filter__input input:nth-child(2) {
   border-left: none;
-  width: 89px;
+  width: 72px;
   padding-left: 52px;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 .main-filter__input::before {
   content: "";
@@ -797,7 +816,7 @@ input[type=number] {
   padding-top: 20px;
 }
 .range-controls__scale {
-  width: 316px;
+  width: 314px;
   height: 2px;
   background: var(--basic-white_opacity);
 }
@@ -826,7 +845,6 @@ input[type=number] {
   top: 9px;
   background: var(--basic-gray_toggle);
   border: 10px solid var(--basic-white);
-
 }
 
 .main-filter__form button {
