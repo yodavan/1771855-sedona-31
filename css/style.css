@@ -74,7 +74,7 @@ input[type=number] {
   font-family: "PTSans", "Arial", sans-serif;
   padding: 0;
   margin: 0;
-  background: var(--basic-gray);
+  background: var(--basic-new_gray);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
