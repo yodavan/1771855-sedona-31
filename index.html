@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
 
   <body class="page-body">
@@ -111,13 +111,15 @@
 
         <section class="search">
           <div class="search__list">
+
             <h2>Заинтересовались?</h2>
             <div class="search__text">
               <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
             <button class="search__button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-
-            <form class="search__form" action="https://echo.htmlacademy.ru" method="POST">
+          </div>
+          <div class="modal">
+            <form class="search__form open-popup" action="https://echo.htmlacademy.ru" method="POST">
 
               <p class="search-form__item">
                 <label for="first_date">Дата заезда:</label>
@@ -162,6 +164,7 @@
         </section>
 
         <section class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417982.00192996714!2d-111.9308494810567!3d35.069628013329414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1624720230902!5m2!1sru!2sru" width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <img src="img/image_index/map.jpg" alt="США Штат: Аризона город: Седона" width="1200" height="594">
         </section>
 
@@ -232,5 +235,7 @@
       </footer>
 
     </div>
+
+    <script src="javascript/index.js"></script>
   </body>
 </html>
