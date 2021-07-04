@@ -828,6 +828,10 @@ input[type=number] {
 .main-filter__input input::placeholder {
   color: var(--basic-white);
 }
+.main-filter__input input::-moz-placeholder {
+  color: var(--basic-white);
+  opacity: 1;
+}
 .main-filter__input input:nth-child(1) {
   border-right: none;
   border-radius: 2px 0 0 2px;
