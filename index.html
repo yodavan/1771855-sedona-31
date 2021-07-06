@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
@@ -17,14 +17,14 @@
 
       <header class="main-header">
 
-        <img src="img/icons/logo.svg" alt="Логотип" width="138" height="70">
+        <a><img src="img/icons/logo.svg" alt="Логотип" width="138" height="70"></a>
 
         <nav class="nav">
           <ul class="nav__list">
-            <li><a class="nav__item" href="#">Информация</a></li>
-            <li><a class="nav__item" href="#">Фото и видео</a></li>
-            <li><a class="nav__item" href="#">Карта штата</a></li>
-            <li><a class="nav__item" href="catalog.html">Гостиницы</a></li>
+            <li><a class="nav__item" href="#" aria-label="Переход на страницу с информацией по городу Седона">Информация</a></li>
+            <li><a class="nav__item" href="#" aria-label="Переход на страницу с фото и видео">Фото и видео</a></li>
+            <li><a class="nav__item" href="#" aria-label="По этой ссылке располагается карта штата">Карта штата</a></li>
+            <li><a class="nav__item" href="catalog.html" aria-label="По это ссылке вы перейдете на бронь гостиниц в Седоне">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -35,7 +35,6 @@
 
         <section class="back-photo">
           <img src="img/icons/welcome.svg" alt="welcome to the gorgeous Sedona Because the grand canyon sucks" width="456" height="350">
-          <div class="back-photo__mask"></div>
         </section>
 
         <section class="text">
@@ -123,7 +122,7 @@
 
               <p class="search-form__item">
                 <label for="first_date">Дата заезда:</label>
-                <input class="search-form__calendar" id="first_date" type="text" name="date" placeholder="24 апреля 2017">
+                <input class="search-form__calendar" id="first_date" type="text" name="check-in-date" placeholder="24 апреля 2017">
                 <button type="button" class="search-form__calendar-link">
                   <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -134,7 +133,7 @@
 
               <p class="search-form__item">
                 <label for="last_date">Дата выезда:</label>
-                <input class="search-form__calendar" id="last_date" type="text" name="date" placeholder="4 июля 2017">
+                <input class="search-form__calendar" id="last_date" type="text" name="check-out-date" placeholder="4 июля 2017">
                 <button type="button" class="search-form__calendar-link">
                   <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" fill="#A9A9A9"/>
@@ -145,7 +144,7 @@
 
               <p class="search-form__item">
                 <label for="not_children">Взрослые:</label>
-                <input class="search-form__people" id="not_children" type="number" min="0" placeholder="2">
+                <input class="search-form__people" id="not_children" type="number" name="adult" min="0" placeholder="2">
                 <button class="search-form__plus-button" type="button"></button>
                 <button class="search-form__minus-button" type="button"></button>
               </p>
@@ -174,12 +173,12 @@
 
         <section class="tel">
           <p class="tel__text">#visitSEDONA</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a href="tel:+78005558628" aria-label="Наш номер телефона. Если хотите нам позвонить, смело жмите сюда.">+7 800 555-86-28</a>
         </section>
 
         <ul class="social">
           <li class="social__item">
-              <a class="social__icon twitter" href="#">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
                 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
                 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
@@ -191,13 +190,13 @@
               </a>
           </li>
           <li class="social__item">
-            <a class="social__icon facebook" href="#">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__icon facebook" href="#" aria-label="Переход на нашу страницу в facebook">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__icon youtube" href="#">youtube<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__icon youtube" href="#" aria-label="Переход на наш канал в youtube">youtube<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0
               1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
               </svg>
@@ -207,7 +206,7 @@
 
         <section class="copyright">
           <p class="copyright__text">Website by</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTML Academy">
             <svg class="link__image" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" fill="black"/>
@@ -236,6 +235,6 @@
 
     </div>
 
-    <script src="javascript/index.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="img/favicon/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
@@ -17,13 +17,13 @@
 
       <header class="main-header">
 
-        <a href="index.html"><img src="img/icons/logo.svg" alt="Логотип" width="138" height="70"></a>
+        <a href="index.html"  aria-label="Переход на главную страницу"><img src="img/icons/logo.svg" alt="Логотип" width="138" height="70"></a>
 
         <nav class="nav">
           <ul class="nav__list">
-            <li><a class="nav__item" href="#">Информация</a></li>
-            <li><a class="nav__item" href="#">Фото и видео</a></li>
-            <li><a class="nav__item" href="#">Карта штата</a></li>
+            <li><a class="nav__item" href="#" aria-label="Переход на страницу с информацией по городу Седона">Информация</a></li>
+            <li><a class="nav__item" href="#" aria-label="Переход на страницу с фото и видео">Фото и видео</a></li>
+            <li><a class="nav__item" href="#" aria-label="По этой ссылке располагается карта штата">Карта штата</a></li>
             <li class="nav__item-active">Гостиницы</li>
           </ul>
         </nav>
@@ -125,15 +125,15 @@
 
             <li class="catalog__item">
               <article class="product">
-                <a href="#">
+                <a href="#" aria-label="Переход на страницу с информацией об отеле">
                   <img src="img/image_catalog/amara.jpg" alt="Комфортная Гостиница" width="135" height="90">
                 </a>
                 <div class="product__column">
-                  <h3><a class="product__link-link" href="#"> Amara Resort & Spa</a></h3>
-                  <p>Гостиница</p>
+                  <h3><a class="product__link-link" href="#" aria-label="Переход на страницу с информацией об отеле"> Amara Resort & Spa</a></h3>
+                  <p>Гостиница<span class="visually-hidden">Четыре звезды</span></p>
                   <p>От 4000 ₽</p>
-                  <a class="product__link" href="#"><span>Подробнее</span></a>
-                  <a class="product__link" href="#">Забронировать</a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу с информацией об отеле"><span>Подробнее</span></a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу бронирования отеля">Забронировать</a>
                 </div>
                 <p class="product__text">Рейтинг: 8,5</p>
               </article>
@@ -141,15 +141,15 @@
 
             <li class="catalog__item">
               <article class="product">
-                <a href="#">
+                <a href="#" aria-label="Переход на страницу с информацией об отеле">
                   <img src="img/image_catalog/desert_motel.jpg" alt="Придорожный Мотель" width="135" height="90">
                 </a>
                 <div class="product__column">
-                  <h3><a class="product__link-link" href="#">Desert Quail Inn</a></h3>
-                  <p>Мотель</p>
+                  <h3><a class="product__link-link" href="#" aria-label="Переход на страницу с информацией об отеле">Desert Quail Inn</a></h3>
+                  <p>Мотель<span class="visually-hidden">Три звезды</span></p>
                   <p>От 3000 ₽</p>
-                  <a class="product__link" href="#"><span>Подробнее</span></a>
-                  <a class="product__link" href="#">Забронировать</a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу с информацией об отеле"><span>Подробнее</span></a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу бронирования отеля">Забронировать</a>
                 </div>
                 <p class="product__text">Рейтинг: 8,9</p>
               </article>
@@ -157,15 +157,15 @@
 
             <li class="catalog__item">
               <article class="product">
-                <a href="#">
+                <a href="#" aria-label="Переход на страницу с информацией об отеле">
                   <img src="img/image_catalog/villas.jpg" alt="Отдельные Апартаменты" width="135" height="90">
                 </a>
                 <div class="product__column">
-                  <h3><a class="product__link-link" href="#">Villas at Poco Diablo</a></h3>
-                  <p>Апартаменты</p>
+                  <h3><a class="product__link-link" href="#" aria-label="Переход на страницу с информацией об отеле">Villas at Poco Diablo</a></h3>
+                  <p>Апартаменты<span class="visually-hidden">Две звезды</span></p>
                   <p>От 2000 ₽</p>
-                  <a class="product__link" href="#"><span>Подробнее</span></a>
-                  <a class="product__link" href="#">Забронировать</a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу с информацией об отеле"><span>Подробнее</span></a>
+                  <a class="product__link" href="#" aria-label="Переход на страницу бронирования отеля">Забронировать</a>
                 </div>
                 <p class="product__text">Рейтинг: 9,2</p>
               </article>
@@ -181,12 +181,12 @@
 
         <section class="tel">
           <p class="tel__text">#visitSEDONA</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a href="tel:+78005558628" aria-label="Наш номер телефона. Если хотите нам позвонить, смело жмите сюда.">+7 800 555-86-28</a>
         </section>
 
         <ul class="social">
           <li class="social__item">
-              <a class="social__icon twitter" href="#">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
                 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
                 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
@@ -198,13 +198,13 @@
               </a>
           </li>
           <li class="social__item">
-            <a class="social__icon facebook" href="#">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__icon facebook" href="#" aria-label="Переход на нашу страницу в facebook">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__icon youtube" href="#">youtube<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__icon youtube" href="#" aria-label="Переход на наш канал в youtube">youtube<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0
               1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
               </svg>
@@ -214,7 +214,7 @@
 
         <section class="copyright">
           <p class="copyright__text">Website by</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTML Academy">
             <svg class="link__image" width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z" fill="black"/>
@@ -243,6 +243,6 @@
 
     </div>
 
-    <script src="javascript/catalog.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
