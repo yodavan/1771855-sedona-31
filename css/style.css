@@ -163,7 +163,7 @@ input[type=number] {
   position: absolute;
   height: 57px;
   width: 1200px;
-  background: url(../img/icons/mask.svg) no-repeat;
+  background: url(../img/icons/mask.svg) no-repeat bottom center;
   left: 0;
   bottom: 0;
 }
@@ -464,7 +464,7 @@ input[type=number] {
 
 .open-popup {
   animation-name: popup;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 .modal {
@@ -477,7 +477,7 @@ input[type=number] {
 .popup-error {
   animation-name: error;
   animation-duration: 100ms;
-  animation-iteration-count: 6;
+  animation-iteration-count: 5;
   animation-fill-mode: forwards;
 }
 
