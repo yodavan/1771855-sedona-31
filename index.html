@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Городок Седона</title>
@@ -11,14 +10,10 @@
     <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/style-min.css">
   </head>
-
   <body class="page-body">
     <div class="container">
-
       <header class="main-header">
-
         <a><img src="img/icons/logo.svg" alt="Логотип" width="138" height="70"></a>
-
         <nav class="nav">
           <ul class="nav__list">
             <li><a class="nav__item" href="#" aria-label="Переход на страницу с информацией по городу Седона">Информация</a></li>
@@ -28,15 +23,11 @@
           </ul>
         </nav>
       </header>
-
       <main>
-
         <h1 class="visually-hidden">Туристический городок Седона</h1>
-
         <section class="back-photo">
           <img src="img/icons/welcome.svg" alt="welcome to the gorgeous Sedona Because the grand canyon sucks" width="456" height="350">
         </section>
-
         <section class="text">
           <div class="text-wrapper">
             <h2 class="text__subtitle">Седона — небольшой городок в Аризоне,<br>
@@ -44,50 +35,46 @@
             <p class="text__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
         </section>
-
         <section class="feature-first">
-          <ul class="feature-first__list">
-            <li class="feature-first__item">
+          <div class="feature-first__list">
+            <div class="feature-first__item">
               <h3>Настоящий<br> городок</h3>
               <p>— №1 —</p>
               <p>Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
-            </li>
-            <li class="feature-first__img">
+            </div>
+            <div class="feature-first__img">
               <img src="img/image_index/image.jpg" alt="Настоящий американский Saloon" width="800" height="256">
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
-
         <section class="benefits">
           <ul class="benefits__list">
-            <li class="benefits__item">
+            <li class="benefits__item house">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item burger">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item suvenirs">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного<br>производства!</p>
             </li>
           </ul>
         </section>
-
         <section class="feature-second">
-          <ul class="feature-second__list">
-            <li class="feature-second__img">
+          <div class="feature-second__list">
+            <div class="feature-second__img">
               <img src="img/image_index/canyon.jpg" alt="Самый красивый каньон" width="800" height="256">
-            </li>
-            <li class="feature-second__item">
+            </div>
+            <div class="feature-second__item">
               <h3>Там есть<br> Мост дьявола</h3>
               <p>— №2 —</p>
               <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
-
         <section class="features">
           <ul class="features__list">
             <li class="features__item">
@@ -107,10 +94,8 @@
             </li>
           </ul>
         </section>
-
         <section class="search">
           <div class="search__list">
-
             <h2>Заинтересовались?</h2>
             <div class="search__text">
               <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
@@ -118,8 +103,7 @@
             <button class="search__button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
           </div>
           <div class="modal">
-            <form class="search__form open-popup" action="https://echo.htmlacademy.ru" method="POST">
-
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="POST">
               <p class="search-form__item">
                 <label for="first_date">Дата заезда:</label>
                 <input class="search-form__calendar" id="first_date" type="text" name="check-in-date" placeholder="24 апреля 2017">
@@ -130,7 +114,6 @@
                   </svg>
                 </button>
               </p>
-
               <p class="search-form__item">
                 <label for="last_date">Дата выезда:</label>
                 <input class="search-form__calendar" id="last_date" type="text" name="check-out-date" placeholder="4 июля 2017">
@@ -141,53 +124,44 @@
                   </svg>
                 </button>
               </p>
-
               <p class="search-form__item">
                 <label for="not_children">Взрослые:</label>
                 <input class="search-form__people" id="not_children" type="number" name="adult" min="0" placeholder="2">
                 <button class="search-form__plus-button" type="button"></button>
                 <button class="search-form__minus-button" type="button"></button>
               </p>
-
               <p class="search-form__item">
                 <label for="children">Дети:</label>
-                <input class="search-form__people" id="children" type="number" min="0" placeholder="0">
+                <input class="search-form__people" id="children" type="number" name="child" min="0" placeholder="0">
                 <button class="search-form__plus-button" type="button"></button>
                 <button class="search-form__minus-button" type="button"></button>
               </p>
-
               <button class="form__button" type="submit">Найти</button>
-
             </form>
           </div>
         </section>
-
         <section class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417982.00192996714!2d-111.9308494810567!3d35.069628013329414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1624720230902!5m2!1sru!2sru" width="1200" height="594" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <img src="img/image_index/map.jpg" alt="США Штат: Аризона город: Седона" width="1200" height="594">
         </section>
-
       </main>
-
       <footer class="main-footer">
-
         <section class="tel">
           <p class="tel__text">#visitSEDONA</p>
           <a href="tel:+78005558628" aria-label="Наш номер телефона. Если хотите нам позвонить, смело жмите сюда.">+7 800 555-86-28</a>
         </section>
-
         <ul class="social">
           <li class="social__item">
-              <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
-                2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
-                4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
-                14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121
-                2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498
-                6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309
-                10.95 1.14409Z" fill="white"/>
-                </svg>
-              </a>
+            <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
+              2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
+              4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
+              14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121
+              2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498
+              6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309
+              10.95 1.14409Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__icon facebook" href="#" aria-label="Переход на нашу страницу в facebook">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +177,6 @@
             </a>
           </li>
         </ul>
-
         <section class="copyright">
           <p class="copyright__text">Website by</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTML Academy">
@@ -227,14 +200,11 @@
               <rect width="115" height="33.0294" fill="white"/>
               </clipPath>
               </defs>
-              </svg>
+            </svg>
           </a>
         </section>
-
       </footer>
-
     </div>
-
     <script src="js/main-min.js"></script>
   </body>
 </html>

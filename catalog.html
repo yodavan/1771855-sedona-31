@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Гостиницы | Седона</title>
@@ -11,14 +10,10 @@
     <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/style-min.css">
   </head>
-
   <body class="page-body">
     <div class="container">
-
       <header class="main-header">
-
         <a href="index.html"  aria-label="Переход на главную страницу"><img src="img/icons/logo.svg" alt="Логотип" width="138" height="70"></a>
-
         <nav class="nav">
           <ul class="nav__list">
             <li><a class="nav__item" href="#" aria-label="Переход на страницу с информацией по городу Седона">Информация</a></li>
@@ -28,14 +23,10 @@
           </ul>
         </nav>
       </header>
-
       <main>
-
         <h1 class="visually-hidden">Поиск Гостиницы в городке Седона</h1>
-
         <section class="main-filter">
           <form class="main-filter__form" action="https://echo.htmlacademy.ru" method="POST">
-
             <fieldset class="main-filter__search">
               <legend>Инфраструктура:</legend>
               <ul class="main-filter__list">
@@ -53,7 +44,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="main-filter__search">
               <legend>Тип жилья:</legend>
               <ul class="main-filter__list">
@@ -71,29 +61,25 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="main-filter__search">
               <legend>Стоимость в сутки, ₽:</legend>
-              <ul class="main-filter__list">
-                <li class="main-filter__input">
-                  <input type="number" placeholder="ОТ 0">
-                  <input type="number" placeholder="ДО 3000">
-                </li>
-                <li class="main-filter__range-controls">
+              <div class="main-filter__list">
+                <div class="main-filter__input">
+                  <input type="number" id="hotel_min" placeholder="ОТ 0">
+                  <input type="number" id="hotel_max" placeholder="ДО 3000">
+                </div>
+                <div class="main-filter__range-controls">
                   <div class="range-controls__scale">
                     <div class="range-controls__bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-                </li>
-              </ul>
+                  <label for="hotel_min"><span class="toggle toggle-min"></span></label>
+                  <label for="hotel_max"><span class="toggle toggle-max"></span></label>
+                </div>
+              </div>
             </fieldset>
-
             <button type="submit">Показать</button>
-
           </form>
         </section>
-
         <section class="filter">
           <div class="filter__wrapper">
             <h2><a href="#">Найдено: 3</a></h2>
@@ -103,14 +89,14 @@
               <li class="filter__item"><button type="submit">По типу</button></li>
               <li class="filter__item"><button type="submit">По рейтингу</button></li>
               <li class="filter__item">
-                <button class="button-up" type="button">
+                <button class="button-up" type="button" aria-label="По возрастанию">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
                   </svg>
                 </button>
               </li>
               <li class="filter__item">
-                <button class="button-down" type="button">
+                <button class="button-down" type="button" aria-label="По убыванию">
                   <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
                   </svg>
@@ -119,10 +105,8 @@
             </ul>
           </div>
         </section>
-
         <section class="catalog">
           <ul class="catalog__list">
-
             <li class="catalog__item">
               <article class="product">
                 <a href="#" aria-label="Переход на страницу с информацией об отеле">
@@ -138,7 +122,6 @@
                 <p class="product__text">Рейтинг: 8,5</p>
               </article>
             </li>
-
             <li class="catalog__item">
               <article class="product">
                 <a href="#" aria-label="Переход на страницу с информацией об отеле">
@@ -154,7 +137,6 @@
                 <p class="product__text">Рейтинг: 8,9</p>
               </article>
             </li>
-
             <li class="catalog__item">
               <article class="product">
                 <a href="#" aria-label="Переход на страницу с информацией об отеле">
@@ -170,32 +152,26 @@
                 <p class="product__text">Рейтинг: 9,2</p>
               </article>
             </li>
-
           </ul>
-
         </section>
-
       </main>
-
       <footer class="main-footer">
-
         <section class="tel">
           <p class="tel__text">#visitSEDONA</p>
           <a href="tel:+78005558628" aria-label="Наш номер телефона. Если хотите нам позвонить, смело жмите сюда.">+7 800 555-86-28</a>
         </section>
-
         <ul class="social">
           <li class="social__item">
-              <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
-                2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
-                4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
-                14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121
-                2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498
-                6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309
-                10.95 1.14409Z" fill="white"/>
-                </svg>
-              </a>
+            <a class="social__icon twitter" href="#" aria-label="Переход на нашу страницу в twitter">twitter<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
+              2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422
+              4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198
+              14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121
+              2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498
+              6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309
+              10.95 1.14409Z" fill="white"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__icon facebook" href="#" aria-label="Переход на нашу страницу в facebook">facebook<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +187,6 @@
             </a>
           </li>
         </ul>
-
         <section class="copyright">
           <p class="copyright__text">Website by</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTML Academy">
@@ -235,14 +210,11 @@
               <rect width="115" height="33.0294" fill="white"/>
               </clipPath>
               </defs>
-              </svg>
+            </svg>
           </a>
         </section>
-
       </footer>
-
     </div>
-
     <script src="js/script-min.js"></script>
   </body>
 </html>
